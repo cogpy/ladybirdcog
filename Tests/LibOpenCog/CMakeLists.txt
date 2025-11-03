@@ -1,0 +1,2 @@
+file(GLOB TEST_SOURCES CONFIGURE_DEPENDS "*.cpp")
+lagom_test(${TEST_SOURCES} LIBS LibOpenCog)

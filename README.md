@@ -2,6 +2,8 @@
 
 [Ladybird](https://ladybird.org) is a truly independent web browser, using a novel engine based on web standards.
 
+This fork integrates [OpenCog](https://opencog.org/) cognitive architecture to enable autonomous browsing capabilities.
+
 > [!IMPORTANT]
 > Ladybird is in a pre-alpha state, and only suitable for use by developers
 >
@@ -16,6 +18,19 @@ an ImageDecoder process, and a RequestServer process.
 Image decoding and network connections are done out of process to be more robust against malicious content.
 Each tab has its own renderer process, which is sandboxed from the rest of the system.
 
+### OpenCog Integration
+
+This fork includes **LibOpenCog**, which provides autonomous browsing capabilities:
+
+- **Autonomous Agent**: AI-driven browser automation and intelligent web interaction
+- **Cognitive Architecture**: OpenCog integration framework for reasoning and learning
+- **Knowledge Processing**: Observation, analysis, and learning from web content
+- **Goal-Directed Behavior**: Autonomous execution of browsing tasks
+
+See [OpenCog Integration documentation](Documentation/OpenCogIntegration.md) for more details.
+
+### Core Components
+
 At the moment, many core library support components are inherited from SerenityOS:
 
 - LibWeb: Web rendering engine
@@ -28,6 +43,7 @@ At the moment, many core library support components are inherited from SerenityO
 - LibMedia: Audio and video playback
 - LibCore: Event loop, OS abstraction layer
 - LibIPC: Inter-process communication
+- **LibOpenCog**: OpenCog cognitive architecture integration
 
 ## How do I build and run this?
 
